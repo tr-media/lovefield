@@ -213,6 +213,12 @@ function getRemoteWebDriver(browser) {
       caps['version'] = '11.0';
       break;
 
+    case 'edge':
+      caps['browserName'] = 'microsoft edge';
+      caps['platform'] = 'Windows 10';
+      caps['version'] = '15.0';
+      break;
+
     default:
       throw new Error('Unsupported browser');
       break;
