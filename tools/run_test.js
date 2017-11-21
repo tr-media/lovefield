@@ -203,8 +203,8 @@ function getRemoteWebDriver(browser) {
 
     case 'safari':
       caps['browserName'] = 'safari';
-      caps['platform'] = 'macOS 10.12';
-      caps['version'] = '11.0';
+      caps['platform'] = 'OSX 10.11';
+      caps['version'] = '10.0';
       break;
 
     case 'ie':
@@ -213,11 +213,14 @@ function getRemoteWebDriver(browser) {
       caps['version'] = '11.0';
       break;
 
+    /*
+    // TODO(arthurhsu): pass locally first.
     case 'edge':
       caps['browserName'] = 'MicrosoftEdge';
       caps['platform'] = 'Windows 10';
       caps['version'] = '15.15063';
       break;
+    */
 
     default:
       throw new Error('Unsupported browser');
