@@ -214,7 +214,7 @@ function getRemoteWebDriver(browser) {
       break;
 
     case 'edge':
-      caps['browserName'] = 'microsoft edge';
+      caps['browserName'] = 'microsoftedge';
       caps['platform'] = 'Windows 10';
       caps['version'] = '15.0';
       break;
