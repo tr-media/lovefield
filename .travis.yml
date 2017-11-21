@@ -19,7 +19,7 @@ env:
     - SELENIUM_BROWSER=ie
     - SELENIUM_BROWSER=safari
     - SELENIUM_BROWSER=firefox
-    - SELENIUM_BROWSER=edge
+      #    - SELENIUM_BROWSER=edge
 
 addons:
   sauce_connect:
