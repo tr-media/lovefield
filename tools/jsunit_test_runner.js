@@ -139,7 +139,7 @@ JsUnitTestRunner.prototype.extractResult_ = function() {
  * @private
  */
 JsUnitTestRunner.prototype.extractLog_ = function() {
-  var logger = webdriver.WebDriver.logs();
+  var logger = this.driver_.manage().logs();
   return logger.get('browser').then(function(entries) {
     log('============ WebDriver [' + this.name_ + '] log ============');
     entries.forEach(function(entry) {
@@ -212,3 +212,4 @@ JsUnitTestRunner.runMany = function(name, driver, urls) {
 
 /** @type {Function} */
 exports.JsUnitTestRunner = JsUnitTestRunner;
+
