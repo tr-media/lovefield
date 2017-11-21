@@ -26,7 +26,7 @@ addons:
     direct_domains: firebase.com,firebaseio.com
 
 before_script:
-  - export _JAVA_OPTIONS=
+  - unset _JAVA_OPTIONS
   - npm install -g gulp
   - npm install
   - export FIREBASE_TOKEN=`cat tools/firebase_token.enc | openssl enc -aes-128-cbc -a -d -salt -pass pass:$FIREBASE_PWD`
